@@ -1,0 +1,636 @@
+* {
+  font-family: 'Istok Web', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --box-color:rgb(84, 84, 84);
+  background-color: #353E51;
+}
+
+@font-face {
+  font-family: 'Aldo';
+  src: url('/src/fonts/AldotheApache.ttf');
+}
+
+nav {
+  border-bottom: 2px solid #e08165;
+  height: 45px;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  padding-right: 10px;
+  background-color: #232937;
+  color: #1fe4a5;
+  display: flex;
+}
+
+.logoBox {
+  flex: 1;
+}
+
+.hamburgerBox {
+  float: right;
+  margin-top: 25px;
+}
+
+.heroBox {
+  width: 100%;
+  background-color: #353E51;
+}
+
+.heroImg {
+  margin-left: 5%;
+  margin-top: 7%;
+  width: 90%;
+  height: auto;
+  margin-bottom: 5%;
+}
+
+.logoImg {
+  margin-left: 20px;
+  margin-top: 10px;
+  width: 120px;
+  height: auto;
+  margin-bottom: 5%;
+}
+
+.aboutInfo {
+  width: 100%;
+  background-color: #232937;
+  text-align: center;
+  padding-top: 20px;
+  color: white;
+  padding-bottom: 35px;
+}
+
+.aboutInfo h1 {
+  font-size: 26px;
+  font-family: 'Aldo';
+  letter-spacing: 0.5px;
+}
+
+.aboutInfo p {
+  font-size: 12px;
+  margin: 10px 10px;
+  color: rgb(171, 171, 171);
+}
+
+.aboutLinks {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutLinks a {
+  text-decoration: none;
+}
+
+.learnBox {
+  width: 100px;
+  height: 38px;
+  background-color: #353E51;
+  border-radius: 10px;
+  margin-left: 15px;
+  text-align: center;
+  line-height: 17px;
+  padding-top: 6px;
+}
+
+.learnBox p {
+  padding: 0px;
+  margin: 0px;
+  color: white;
+}
+
+.redeemBox {
+  width: 100%;
+  background-color: #353E51;
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.redeemItemsBox {
+  display: flex;
+  text-align: center;
+}
+
+.brandBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+}
+
+.brandBox img{
+  margin-bottom: 5px;
+}
+
+.redeemBox h1{
+  color: white;
+  font-family: 'Aldo';
+  font-size: 20px;
+  margin-left: 20px;
+  letter-spacing: 0.7px;
+  margin-bottom: 5px;
+}
+
+.redeemBox p{
+  color: rgb(171, 171, 171);
+  font-size: 12px;
+  margin-top: 10px;
+  margin: 0px 14px;
+}
+
+.redeemBox img{
+  width: auto;
+  height: 60px;
+}
+
+.redeemImg {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.redeemText {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20px;
+}
+
+.formInstructions {
+  background-color: #353E51;
+  color: white;
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 25px;
+}
+
+.formInstructions h1 {
+  color: #1fe4a5;
+  text-align: center;
+  font-family: 'Aldo', sans-serif;
+  text-decoration: none;
+  letter-spacing: 1.3px;
+}
+
+.formInstructions h2 {
+  font-size: 26px;
+  text-align: center;
+  font-family: 'Aldo', sans-serif;
+  letter-spacing: 2px;
+}
+
+.formInstructions p {
+  font-size: 1.1rem;
+  color: rgb(171, 171, 171);
+  margin-top: 7px;
+  margin-right: 5px;
+  padding: 2px;
+}
+
+input[type=text] {
+  background-color: #232937;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+  color: white;
+  padding-left: 2px;
+  width: 50%;
+  margin-right: 40px;
+}
+
+input[type=date] {
+  background-color: #232937;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+  color: white;
+  padding-left: 2px;
+  width: 50%;
+  margin-right: 40px;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+select {
+  background-color: #232937;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+  color: white;
+  padding-left: 2px;
+  width: 51%;
+  margin-right: 40px;
+}
+
+input[type=submit] {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 12px 12px;
+  background-color: #232937;
+  border: 1px solid #1fe4a5;
+  color: rgb(209, 209, 209);
+  border-radius: 9px;
+}
+
+.submitBtn{
+  text-align: center;
+}
+
+input[type=text]:focus {
+  border: 2px solid #1fe4a5;
+}
+
+label {
+  margin-right: 10px;
+}
+
+.checkLabel {
+  text-align: left;
+}
+
+.checkLabel label{
+  margin-left: 20px;
+}
+
+.signupForm {
+  text-align: right;
+}
+
+.error-border {
+  border: 2px solid red;
+}
+
+.secretBox {
+  display: none;
+  background-color: #353E51;
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.secretInfo {
+  width: 80%;
+  background-color: black;
+  opacity: 100;
+  margin: 20px;
+  border: 2px solid #1fe4a5;
+  border-radius: 15px;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.closeSecret {
+  position: absolute;
+  top: 38px;
+  right: 50px;
+  border: none;
+  background-color: transparent;
+  border: 2px solid #1fe4a5;
+  color: #1fe4a5;
+  padding: 4px 10px 4px 10px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 50%;
+}
+
+#totalError {
+  color: red;
+  margin-left: 15px;
+}
+
+input[type="checkbox"]:checked {
+  accent-color: #1fe4a5;
+}
+
+input[type="checkbox"] {
+  margin-left: 5%;
+  accent-color: #232937;
+}
+
+.greenSpan {
+  color: #1fe4a5;
+}
+
+footer {
+  color: white;
+  text-align: right;
+  background-color: #232937;
+  width: 100%;
+  bottom: 0px;
+}
+
+footer p {
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+}
+
+#myLinks {
+  background-color: #232937;
+  width: 100%;
+  position: absolute;
+  padding: 10px 0px;
+  margin: 0;
+  top: 97px;
+  text-align: right;
+  display: none;
+}
+
+#myLinks a{
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.legalPage {
+  color: white;
+}
+
+.legalPage h1{
+  font-size: 18px;
+}
+
+.legalPage p{
+  font-size: 12px;
+}
+
+.termsHeader {
+  text-align: center;
+  padding: 30px 0px;
+}
+
+.termsHeader h1{
+  font-family: 'Aldo';
+  font-size: 30px;
+  letter-spacing: 1.7px;
+}
+
+.termsHeader h2{
+  color: rgb(171, 171, 171);
+  font-size: 12px;
+}
+
+.dataUsage {
+  color: white;
+  padding: 30px 20px;
+  background-color: #232937;
+}
+
+.ageRestrict {
+  color: white;
+  padding: 30px 20px;
+}
+
+.chanceOfWinning {
+  color: white;
+  padding: 30px 20px;
+  background-color: #232937;
+}
+
+.optOut {
+  padding: 30px 20px;
+}
+
+/* Instructions */
+
+.instructions {
+  padding: 20px;
+}
+
+.instructions h1 {
+  color: white;
+  font-family: 'Aldo';
+  margin: 10px 0;
+  letter-spacing: 1.5px;
+}
+
+.introText {
+  color: rgb(171, 171, 171);
+  margin: 10px 0;
+}
+
+.instructions table {
+  border: 2px solid #1fe4a5;
+  margin-top: 10px;
+  color: white;
+  background-color: #232937;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.instructions h2 {
+  font-size: 16px;
+}
+
+tr, td{
+  border: 2px solid #1fe4a5;
+  padding: 5px;
+  width: 50%;
+}
+
+
+/* gameboard */
+
+.timer {
+  text-align: right;
+  color: white;
+  font-size: 20px;
+}
+
+.gameBoard{
+  border: 2px solid #1fe4a5;
+}
+
+.gameCards{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  padding: 30px;
+  height: 100vh;
+}
+
+.tile{
+  background-color: #12161f;
+  width: 40vw;
+  height: 40vw;
+  border: 2px solid #1fe4a5;
+  margin: 0 auto;
+  margin: 5px;
+}
+
+.tile img{
+  height: 100%;
+  width: auto;
+}
+
+.gameModal {
+  position: absolute;
+  width: 100%;
+  height: 111%;
+  background-color: #353E51;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playButton {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px 40px;
+  background-color: #232937;
+  border: 1px solid #1fe4a5;
+  color: rgb(209, 209, 209);
+  border-radius: 9px;
+  font-size: 50px;
+}
+
+.modalTimer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px 40px;
+  background-color: #232937;
+  border: 1px solid #1fe4a5;
+  color: rgb(194, 0, 0);
+  border-radius: 9px;
+  font-size: 50px;
+}
+
+/* Win Page */
+
+.winPage {
+  padding: 20px;
+}
+
+.winPage h1{
+  font-family: 'Aldo';
+  color: white;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.winPage p{
+  color: rgb(171, 171, 171);
+  margin-bottom: 5px;
+}
+
+.mathContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin: 20px 0px;
+}
+
+.math {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 80%;
+  height: 70px;
+  background-color: #232937;
+  border-radius: 12px;
+}
+
+.math button {
+  padding: 5px 5px;
+  background-color: #232937;
+  border: 1px solid #1fe4a5;
+  color: rgb(209, 209, 209);
+  border-radius: 5px;
+}
+
+.math input {
+  background-color: #353E51;
+  border: 2px solid #353E51;
+  border-radius: 5px;
+  width: 50%;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: white;
+}
+
+.playAgainWin h1{
+  font-family: 'Istok Web';
+}
+
+.playAgainWin h2 {
+  color: #1fe4a5;
+  font-size: 90px;
+}
+
+/* Lose Page */
+
+.losePage {
+  padding: 20px;
+}
+
+.losePage h1{
+  font-family: 'Aldo';
+  letter-spacing: 2px;
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+.losePage p{
+  color: rgb(171, 171, 171);
+  margin-bottom: 20px;
+}
+
+.playAgainLose {
+  margin-bottom: 200px;
+}
+
+.playAgainLose h1{
+  font-family: 'Istok Web';
+}
+
+.playAgainLose h2 {
+  color: #1fe4a5;
+  font-size: 90px;
+}
+
+
+
+
+/* Desktop */
+
+@media only screen and (min-width: 992px) {
+  .root {
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  .gameCards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    padding-left: 150px;
+  }
+
+  .tile{
+    background-color: #12161f;
+    width: 17vw;
+    height: 17vw;
+    border: 2px solid #1fe4a5;
+    margin: 0 auto;
+    margin: 5px;
+  }
+
+  .tile img {
+    width: 100%;
+  }
+}
